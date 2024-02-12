@@ -1,0 +1,13 @@
+. git config --global http.sslbackend schannel  
+. git remote add origin https://github.com/Dunk1977/cp-blog 
+. git push -u origin master 
+
+ 
+
+git branch -M main
+git remote add origin https://github.com/Dunk1977/cp-blog.git
+git push -u origin main
+
+git remote add origin https://github.com/Dunk1977/cp-blog.git
+git branch -M main
+git push -u origin main
