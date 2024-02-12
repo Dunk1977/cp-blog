@@ -2,4 +2,4 @@ DONE. git config --global http.sslbackend schannel
 DONE. git remote add origin https://github.com/Dunk1977/cp-blog 
 DONE. git push -u origin master 
 . Create the 'Add Posts' page
- 
+. Apply below color pallette. https://colorhunt.co/palette/12372a436850adbc9ffbfada
