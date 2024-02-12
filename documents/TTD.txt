@@ -1,5 +1,8 @@
 DONE. git config --global http.sslbackend schannel  
 DONE. git remote add origin https://github.com/Dunk1977/cp-blog 
 DONE. git push -u origin master 
+. Create the Main Page as mentioned in the below link. Understand it as well. 
+    https://www.youtube.com/watch?v=PgAZ8KzfhO8
+. Check if the home page is responsive or not. 
 . Create the 'Add Posts' page
 . Apply below color pallette. https://colorhunt.co/palette/12372a436850adbc9ffbfada
