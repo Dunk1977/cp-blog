@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    align-items: center;
+    padding: 20px;
+    /* background-color: #333; */
+    color: white;
+}
+
+
+.flexbox-left {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.flexbox-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    background-image: url('../images/karakoram.avif'); /* Replace 'background.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 140px); /* Ensure main fills the entire viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}

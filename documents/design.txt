@@ -1,0 +1,28 @@
+### PAGES ####
+
+1. Home page
+    A landing page, displaying nothing but a background image and name of the blog and some text. 
+    On the top right the menu is being displayed.
+        Home
+        View
+        Add posts
+
+2. View Posts
+    A page with a header, footer and content area. 
+    In the content area all the posts with their titles as H2 and content as p are displayed. 
+    Above each post will be two icons/buttons. Promote up and Promote Down. Which will change the order of the post. 
+    After each post are three icon/buttons for editing, deleting the post. 
+
+3. Add posts
+    A page with a header, footer and a content area. 
+    In the content area are two boxes. One for title and the other one for blog
+    After the textboxes are two buttons. Save and Cancel
+    Cancel will take the user to 'View Posts' page. 
+
+4. Edit posts
+    This is not a separate page but the same page as mentioned in 3. 
+    But this option will add the title and blog in the text boxes and will allow the user to edit. 
+    If the user presses 'Save' instead of a new post to be added, existing post will be edited. 
+    Cancel will take the user to 'View Posts' page. 
+
+

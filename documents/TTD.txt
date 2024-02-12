@@ -1,13 +1,5 @@
-. git config --global http.sslbackend schannel  
-. git remote add origin https://github.com/Dunk1977/cp-blog 
-. git push -u origin master 
-
+DONE. git config --global http.sslbackend schannel  
+DONE. git remote add origin https://github.com/Dunk1977/cp-blog 
+DONE. git push -u origin master 
+. Create the 'Add Posts' page
  
-
-git branch -M main
-git remote add origin https://github.com/Dunk1977/cp-blog.git
-git push -u origin main
-
-git remote add origin https://github.com/Dunk1977/cp-blog.git
-git branch -M main
-git push -u origin main
