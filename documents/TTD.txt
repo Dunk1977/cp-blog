@@ -4,11 +4,11 @@ DONE. git push -u origin master
 DONE. Create the Main Page as mentioned in the below link. Understand it as well. 
     https://www.youtube.com/watch?v=PgAZ8KzfhO8
 DONE. Check if the home page is responsive or not. It is except for menu bar. 
-. Make the menu bar in the home page responsive as per the below video. 
+DONE. Make the menu bar in the home page responsive as per the below video. 
     https://www.youtube.com/watch?v=oLgtucwjVII
     https://www.youtube.com/watch?v=U8smiWQ8Seg (Uses JS)
 
 . Create the 'Add Posts' page
-    https://www.youtube.com/watch?v=524ycUqs3f0&pp=ygUTaHRtbCBjc3MgZW50cnkgZm9ybQ%3D%3D
+    https://www.youtube.com/watch?v=-HeadgoqJ7A
     
 . Apply below color pallette. https://colorhunt.co/palette/12372a436850adbc9ffbfada
