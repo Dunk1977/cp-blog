@@ -8,7 +8,9 @@ DONE. Make the menu bar in the home page responsive as per the below video.
     https://www.youtube.com/watch?v=oLgtucwjVII
     https://www.youtube.com/watch?v=U8smiWQ8Seg (Uses JS)
 
-. Create the 'Add Posts' page
+DONE. Create the 'Add Posts' page
     https://www.youtube.com/watch?v=-HeadgoqJ7A
     
+. Create template to view Posts
+
 . Apply below color pallette. https://colorhunt.co/palette/12372a436850adbc9ffbfada
