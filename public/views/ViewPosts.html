@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Sample 2 with Navbar</title>
+    <style> 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(#FBFADA, white  );
+            /* background-color: black; */
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            background-color: #12372A;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+            
+        }
+
+        nav ul {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+        }
+
+        nav li {
+            height: 50px;
+        }
+
+        nav a {
+            height: 100%;
+            padding: 0 30px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: #FBFADA;
+        }
+
+        nav a:hover {
+            background-color: #FBFADA;
+            background-color: white;
+            color: black;
+        }
+
+        nav li:first-child{
+            margin-right: auto;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 250px;
+            z-index: 999;
+            backdrop-filter: blur(10px);
+            /* background-color: rgb(251, 250, 218, 0.2); */
+            /* background-color: rgb(251, 250, 218,0.2); */
+            background-color: #12372A;
+            box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .sidebar li {
+            width: 100%;
+        }
+
+        .sidebar a {
+            width: 100%;
+        }
+        
+        .menu-button { 
+            display: none;
+            background-color: white;
+        }
+
+        .close-button {
+            background-color: white;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background-color: #FBFADA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 90px;
+        }
+
+        .content-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            /* gap: 20px; */
+        }
+
+        .content-section .card {
+            flex: 1;
+            margin: 20px 20px;
+            box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+
+        }
+
+        .content-section .card h2 {
+            margin: 15px 0px;
+            font-size: 28px;
+            color:#12372A;
+            /* font-family: sans-serif; */
+        }
+
+        .content-section .card p {
+            font-size: 16px;
+            line-height: 1.5;
+            padding: 0px 10px;
+            margin-bottom: 20px;
+        }
+
+        @media(max-width: 600px) {
+            .hideOnMobile {
+                display: none;
+            }
+
+            .menu-button { 
+                display: block;
+            }
+
+        }
+
+        @media(max-width: 400px) {
+            .sidebar {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li class="close-button" onclick=closeSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">View</a></li>
+            <li><a href="#">Add</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+
+        </ul>
+
+        <ul>
+            <li class="hideOnMobile"><a href="#">The Blog</a></li>
+            <li class="hideOnMobile"><a href="#">View</a></li>
+            <li class="hideOnMobile"><a href="#">Add</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+        <div class="content-section">
+            <div class="card">
+                <h2> Lessons on greed from Abha </h2>
+                <p> Whenever you embark on a journey, the unfamiliar surroundings and challenges can serve as profound teachers. The lessons learned in such moments are often etched into your memory, as they come amidst the backdrop of perseverance and a tested spirit. In a foreign land where roads and pathways are unfamiliar, and your mind and body may feel defeated, it is your soul that propels you forward. Nature, in these moments, imparts lessons that penetrate not just your body and mind but directly enter into your soul, leaving lasting imprints. </p>
+
+            </div>
+
+            <div class="card">
+                <h2> Lessons 2 </h2>
+                <p> Whenever you embark on a journey, the unfamiliar surroundings and challenges can serve as profound teachers. The lessons learned in such moments are often etched into your memory, as they come amidst the backdrop of perseverance and a tested spirit. In a foreign land where roads and pathways are unfamiliar, and your mind and body may feel defeated, it is your soul that propels you forward. Nature, in these moments, imparts lessons that penetrate not just your body and mind but directly enter into your soul, leaving lasting imprints. </p>
+            </div>
+
+            <div class="card">
+                <h2> Lessons 3 </h2>
+                <p> Whenever you embark on a journey, the unfamiliar surroundings and challenges can serve as profound teachers. The lessons learned in such moments are often etched into your memory, as they come amidst the backdrop of perseverance and a tested spirit. In a foreign land where roads and pathways are unfamiliar, and your mind and body may feel defeated, it is your soul that propels you forward. Nature, in these moments, imparts lessons that penetrate not just your body and mind but directly enter into your soul, leaving lasting imprints. </p>
+            </div>
+
+
+        </div>
+    </div>
+
+        
+    <script>
+        function showSidebar() { 
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display='flex'
+        }
+
+        function closeSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
