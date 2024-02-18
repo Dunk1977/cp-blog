@@ -11,6 +11,25 @@ DONE. Make the menu bar in the home page responsive as per the below video.
 DONE. Create the 'Add Posts' page
     https://www.youtube.com/watch?v=-HeadgoqJ7A
     
-. Create template to view Posts
+DONE. Create template to view Posts
 
-. Apply below color pallette. https://colorhunt.co/palette/12372a436850adbc9ffbfada
+DONE. Apply below color pallette. https://colorhunt.co/palette/12372a436850adbc9ffbfada
+
+DONE. Initialize a Node.js project using npm init. 
+
+DONE. Install Express.js using npm install express. 
+
+DONE. Install EJS using npm install EJS 
+
+DONE. Create the index.js file (which will contain all the routes)in the root folder.  
+
+. Separate the css code and the js script code.
+. Break the main.html file in smaller ejs files and include them in the main.ejs file. 
+
+Define Routes in the index.js file 
+
+Serve static files: Configure Express to serve static files (e.g., CSS files, images) using the express.static middleware. 
+
+Start the server 
+
+Test my setup

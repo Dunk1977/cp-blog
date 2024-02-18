@@ -11,7 +11,7 @@
     A page with a header, footer and content area. 
     In the content area all the posts with their titles as H2 and content as p are displayed. 
     Above each post will be two icons/buttons. Promote up and Promote Down. Which will change the order of the post. 
-    After each post are three icon/buttons for editing, deleting the post. 
+    After each post are two icon/buttons for editing, deleting the post. 
 
 3. Add posts
     A page with a header, footer and a content area. 
@@ -21,8 +21,9 @@
 
 4. Edit posts
     This is not a separate page but the same page as mentioned in 3. 
-    But this option will add the title and blog in the text boxes and will allow the user to edit. 
-    If the user presses 'Save' instead of a new post to be added, existing post will be edited. 
-    Cancel will take the user to 'View Posts' page. 
+    This page/option can be accessed from the 'View Posts' page, if the user clicks on 'Edit'. 
+    Once the user clicks on 'Edit', the page 'Add Posts' will open but with the title and body of the post. 
+    If the user makes any changes and press on save, the post will over-written with the new post. 
+    If the user selects cancel he will be taken back to the 'View Posts' page. 
 
 
