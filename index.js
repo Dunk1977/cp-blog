@@ -10,7 +10,7 @@ app.use(express.static("public"));
 
 app.get("/", (req, res) => { 
 
-    res.sendFile(__dirname + "/public/views/main.html");
+  res.render("main.ejs");
 
   }); 
 
