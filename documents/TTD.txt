@@ -23,8 +23,12 @@ DONE. Install EJS using npm install EJS
 
 DONE. Create the index.js file (which will contain all the routes)in the root folder.  
 
-. Separate the css code and the js script code.
-. Break the main.html file in smaller ejs files and include them in the main.ejs file. 
+DONE. Separate the css code and the js script code. Break the main.html file in smaller ejs files and include them in the main.ejs file. 
+
+. Convert view.html into view.ejs
+. Convert SimpleForm.html into addposts.ejs
+. Fix all the links
+
 
 Define Routes in the index.js file 
 
