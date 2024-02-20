@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 nav {
-    background-color: white;
+    background-color: #12372A;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
 }
 
@@ -36,11 +37,12 @@ nav a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color: #FBFADA;
 }
 
 nav a:hover {
     background-color: lightgrey;
+    color: black;
 }
 
 nav li:first-child{
@@ -55,7 +57,7 @@ nav li:first-child{
     width: 250px;
     z-index: 999;
     backdrop-filter: blur(10px);
-    background-color: rgb(255, 255, 255, 0.2);
+    background-color: #12372A;
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
     display: none;
     flex-direction: column;
@@ -73,6 +75,8 @@ nav li:first-child{
 
 .menu-button { 
     display: none;
+    background-color: white;
+
 }
 
 @media(max-width: 600px) {

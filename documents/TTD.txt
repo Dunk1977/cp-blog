@@ -25,15 +25,18 @@ DONE. Create the index.js file (which will contain all the routes)in the root fo
 
 DONE. Separate the css code and the js script code. Break the main.html file in smaller ejs files and include them in the main.ejs file. 
 
-. Convert view.html into view.ejs
-. Convert SimpleForm.html into addposts.ejs
-. Fix all the links
+DONE. Convert view.html into view.ejs
+DONE. Convert SimpleForm.html into addposts.ejs
+DONE. Fix all the links
+DONE. Define Routes in the index.js file 
+DONE. Serve static files: Configure Express to serve static files (e.g., CSS files, images) using the express.static middleware. 
+DONE. Start the server 
+DONE. Test my setup
 
+. Add ID Column in blogPosts array
+. Add Buttons for Edit and Delete in each card in view-posts page. 
+. Implement the 'Edit' functionality
+. Implement the 'Delete' functionality. 
 
-Define Routes in the index.js file 
+. Final Test and Completion
 
-Serve static files: Configure Express to serve static files (e.g., CSS files, images) using the express.static middleware. 
-
-Start the server 
-
-Test my setup
