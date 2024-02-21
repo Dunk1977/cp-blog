@@ -9,22 +9,7 @@ const port=3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //
-let blogPosts = [
-  {
-    title: "why do we sleep",
-    content: "to have dreams. to have dreams. to have dreams. to have dreams"
-  }, 
-
-  {
-    title: "when you are sad",
-    content: "loooooooook aaaaaat the sky"
-  }, 
-
-  {
-    title: "when someone bothers you",
-    content: "bother someone. bother someone. bother someone"
-  }
-]
+let blogPosts = []
 
 
 app.use(express.static("public"));
@@ -48,12 +33,43 @@ app.get("/add-posts", (req, res) => {
   }); 
 
 app.post("/add-posts", (req, res) => {
-  const {title, blogContent } = req.body;
-  blogPosts.push({ title: title, content: blogContent});
-  res.redirect("/view-posts");
+  const { title, blogContent } = req.body;
 
+  //find max value in blogPosts
+  let max = 0;
+  for(let i=0; i < blogPosts.length; i++) {
+    if (blogPosts[i].postId > max) {
+      max = blogPosts[i].postId;
+    }
+  }
+  const newId = max + 1;
+  blogPosts.push({ postId: newId, title: title, blogContent: blogContent});
+
+  res.render("view-posts.ejs", { blogPosts: blogPosts });
 })
 
+
+app.get("/edit-posts", (req, res) => { 
+  const { postId, title, blogContent } = req.body;
+  const index = blogPosts.findIndex(post => post.postId === postId);
+  console.log("open post " + postId);
+
+  if (index !== -1) {
+    res.render("edit-posts.ejs", { blogPosts: blogPosts[index] });
+  }
+
+  }); 
+
+app.post("/edit-posts", (req, res) => { 
+
+  const { postId, title, blogContent } = req.body;
+  console.log("editing post " + postId);
+  const index = blogPosts.findIndex(post => post.postId === postId);
+    if (index !== -1) {
+      // provide code to edit / update the values in this position of the array. 
+      res.render("view-posts.ejs", { blogPosts: blogPosts[index] });
+    }
+  }); 
 
 app.listen(port, () => { 
 

@@ -2,14 +2,15 @@
 <%- include('nav.ejs') %>
 
 <div class="content-container">
-    <form action="/add-posts" method="post" class="content-left">
+    <form action="/edit-posts" method="post" class="content-left">
         <div class="left-containter-title">
-            <h2> Enter Your Blog Here </h2>
+            <h2> Edit Your Blog Here </h2>
             <hr>
         </div>
 
-            <input type="text" name="title" placeholder="Title of the blog" class="form-inputs" required> 
-            <textarea name="blogContent" placeholder="Enter your Blog Content" class="form-inputs" required></textarea>
+            <input type="hidden" name="postId" value="<%= postId %>">
+            <input type="text" name="title" placeholder="Title of the blog" class="form-inputs" value="<%= title %>" required> 
+            <textarea name="blogContent" placeholder="Enter your Blog Content" class="form-inputs" value="<%= blogContent %>" required></textarea>
         <div class="button-box">
             <button type="submit" class="form-buttons"> Save</button>
             <button type="button" onclick=loadViewPosts() class="form-buttons"> Cancel</button>

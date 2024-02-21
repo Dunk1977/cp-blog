@@ -7,7 +7,16 @@
             <% blogPosts.forEach (post => { %>
                 <div class="card">
                     <h2> <%= post.title %> </h2>
-                    <p> <%= post.content %> </p>
+                    <p> <%= post.blogContent %> </p>
+                    <%= post.postId %>
+                    <form action="/edit-posts" method="GET">
+                        <input type="hidden" name="postId" value="<%= post.postId %>">
+                        <div class="button-box">
+                            <button type="submit" class="form-buttons"> Edit</button>
+                            <button type="button" onclick=deletePost(post.postId) class="form-buttons"> Delete</button>
+                        </div>
+                        <!-- Add other form fields or buttons here if needed -->
+                    </form>
                 </div>
            <% }); %>
            <% } else { %>

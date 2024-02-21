@@ -11,3 +11,4 @@ function closeSidebar() {
 function loadViewPosts() {
     window.location.href = "/view-posts";
 }
+

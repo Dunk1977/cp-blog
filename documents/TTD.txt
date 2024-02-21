@@ -33,10 +33,30 @@ DONE. Serve static files: Configure Express to serve static files (e.g., CSS fil
 DONE. Start the server 
 DONE. Test my setup
 
-. Add ID Column in blogPosts array
+DONE. Add ID Column in blogPosts array
 . Add Buttons for Edit and Delete in each card in view-posts page. 
 . Implement the 'Edit' functionality
 . Implement the 'Delete' functionality. 
 
 . Final Test and Completion
 
+
+In your `view-posts.ejs` file, you're passing the `postId` as a query parameter in the URL when the Edit button is clicked. However, in your Express route `/edit-posts`, you're trying to access it from `req.body`, which is incorrect. Query parameters are accessed from `req.query`. Here's how you can fix it:
+
+```javascript
+app.get("/edit-posts", (req, res) => { 
+  const { postId } = req.query;
+  const index = blogPosts.findIndex(post => post.postId === postId);
+  console.log("open post " + postId);
+
+  if (index !== -1) {
+    res.render("edit-posts.ejs", { blogPost: blogPosts[index] }); // Pass a single post object
+  } else {
+    res.send("Post not found");
+  }
+});
+```
+
+Make sure to also adjust your `edit-posts.ejs` file to handle the `blogPost` object instead of `blogPosts`.
+
+Additionally, it seems you're using `req.body` to retrieve query parameters. However, query parameters are sent in the URL and are accessed via `req.query`. `req.body` is used to access parameters sent in the request body, typically used in POST requests.
