@@ -8,9 +8,9 @@
             <hr>
         </div>
 
-            <input type="hidden" name="postId" value="<%= postId %>">
-            <input type="text" name="title" placeholder="Title of the blog" class="form-inputs" value="<%= title %>" required> 
-            <textarea name="blogContent" placeholder="Enter your Blog Content" class="form-inputs" value="<%= blogContent %>" required></textarea>
+            <input type="hidden" name="postId" value="<%= blogPosts.postId %>">
+            <input type="text" name="title" placeholder="Title of the blog" class="form-inputs" value="<%= blogPosts.title %>" required> 
+            <textarea name="blogContent" placeholder="Enter your Blog Content" class="form-inputs"> <%= blogPosts.blogContent %> </textarea>
         <div class="button-box">
             <button type="submit" class="form-buttons"> Save</button>
             <button type="button" onclick=loadViewPosts() class="form-buttons"> Cancel</button>

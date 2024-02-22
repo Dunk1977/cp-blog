@@ -50,9 +50,8 @@ app.post("/add-posts", (req, res) => {
 
 
 app.get("/edit-posts", (req, res) => { 
-  const { postId, title, blogContent } = req.body;
-  const index = blogPosts.findIndex(post => post.postId === postId);
-  console.log("open post " + postId);
+  const { postId } = req.query;
+  const index = blogPosts.findIndex(post => post.postId === parseInt(postId));
 
   if (index !== -1) {
     res.render("edit-posts.ejs", { blogPosts: blogPosts[index] });
@@ -63,13 +62,30 @@ app.get("/edit-posts", (req, res) => {
 app.post("/edit-posts", (req, res) => { 
 
   const { postId, title, blogContent } = req.body;
-  console.log("editing post " + postId);
-  const index = blogPosts.findIndex(post => post.postId === postId);
+  const index = blogPosts.findIndex(post => post.postId === parseInt(postId));
+
     if (index !== -1) {
       // provide code to edit / update the values in this position of the array. 
-      res.render("view-posts.ejs", { blogPosts: blogPosts[index] });
+      blogPosts[index].title = title;
+      blogPosts[index].blogContent = blogContent;
+      res.render("view-posts.ejs", { blogPosts: blogPosts });
     }
   }); 
+
+  app.get("/delete-posts", (req, res) => {
+    const { postId } = req.query;
+    console.log ("post " + postId);
+    const index = blogPosts.findIndex(post => post.postId === parseInt(postId));
+    console.log("index " + index);
+
+    if (index !== -1) {
+        // Remove the post from the array
+        blogPosts.splice(index, 1);
+        res.render("view-posts.ejs", { blogPosts: blogPosts });
+      } else {
+        res.status(404).send("Post not found");
+    }
+});
 
 app.listen(port, () => { 
 

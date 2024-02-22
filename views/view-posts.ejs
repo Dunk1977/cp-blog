@@ -8,15 +8,19 @@
                 <div class="card">
                     <h2> <%= post.title %> </h2>
                     <p> <%= post.blogContent %> </p>
-                    <%= post.postId %>
-                    <form action="/edit-posts" method="GET">
-                        <input type="hidden" name="postId" value="<%= post.postId %>">
-                        <div class="button-box">
+                    <div class="button-box">
+
+                        <form action="/edit-posts" method="GET">
+                            <input type="hidden" name="postId" value="<%= post.postId %>">
                             <button type="submit" class="form-buttons"> Edit</button>
-                            <button type="button" onclick=deletePost(post.postId) class="form-buttons"> Delete</button>
-                        </div>
-                        <!-- Add other form fields or buttons here if needed -->
-                    </form>
+                        </form>
+
+                        <form action="/delete-posts" method="GET">
+                            <input type="hidden" name="postId" value="<%= post.postId %>">
+                                <button type="submit" class="form-buttons"> Delete</button>
+                        </form>
+                    </div>
+
                 </div>
            <% }); %>
            <% } else { %>

@@ -37,3 +37,26 @@
     padding: 0px 10px;
     margin-bottom: 20px;
 }
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   
+}
+
+.button-box button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #FBFADA; 
+    gap: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(270deg, #ADBC9F, #12372A);
+    cursor: pointer;
+
+}
